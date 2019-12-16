@@ -1,0 +1,7 @@
+
+MONGODB_SERVER = "mongodb+srv://[USERNAME]:[PASSWORD]@[DBCLUSTERNAME].mongodb.net/test?retryWrites=true&w=majority"
+MONGODB_DB = '[DBNAME]'
+MONGODB_COLLECTION = '[COLLECTIONNAME]'
+
+HOST = '0.0.0.0'
+PORT = '8888'
