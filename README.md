@@ -8,7 +8,7 @@ This is mini framework to achieve a simple web content crawler with a live [demo
 
 ## prerequisites
 
-This framework is developed under **Python3** (Python>=3.7.0) and using the `Scrapy` and `Flask` packages. Both `PIP` and `Conda` can be used to configure the environment and install required libraries, and [Anaconda3](https://www.anaconda.com/distribution/) is recommended.
+This framework is developed under **Python3** (Python>=3.6.0) and using the `Scrapy` and `Flask` packages. Both `PIP` and `Conda` can be used to configure the environment and install required libraries, and [Anaconda3](https://www.anaconda.com/distribution/) is recommended.
 
 After cloning or downloading this repo, run following command in the source folder to install the required packages:
 
