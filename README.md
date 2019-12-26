@@ -86,7 +86,7 @@ Launch the web application by:
 python app.py
 ```
 
-Open a web-browswer and direct to the URL: **https://127.0.0.1:8888**. In the search box, type "boy" and submit.
+Open a web-browswer and direct to the URL: **http://127.0.0.1:8888**. In the search box, type "boy" and submit.
 
 
 
