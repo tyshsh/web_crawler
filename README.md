@@ -30,15 +30,23 @@ conda install -c anaconda flask
 
 ### 1. Build up MongoDB
 
+A simple and free MongoDB instance can be built on the Atlas Cloud service at https://cloud.mongodb.com/. Following this [tutorial](https://docs.atlas.mongodb.com/tutorial/deploy-free-tier-cluster/) to create a database for this software, which including following steps:
 
-### Crawl books information
+  1. Create a new project
+  2. Inside the project, create a new cluster
+  3. Inside the cluster, click to view the colletions
+  4. Create a new collection with the database name "**bookstore**" and collection name "**books**"
+  5. In the left side-bar, Click "Database Access" under the "SECURITY" group.
+  6. Add new user using username/password method and with read/write permissions.
+
+### 2. Crawl books information
 
 ```
 cd books
 scrapy crawl books
 ```
 
-### 2. Launch web application
+### 3. Launch web application
 
 ```
 cd webapp
