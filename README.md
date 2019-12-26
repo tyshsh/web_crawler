@@ -41,8 +41,25 @@ A simple and free MongoDB instance can be built on the Atlas Cloud service at ht
 
 ### 2. Crawl books information
 
+Go into the source folder of scrapy/books project, make a new setting file from `settings.py.sample`:
+
 ```
-cd books
+cd books/books
+cp settings.py.sample settings.py.sample
+```
+
+Open the file `settings.py`, change the values of following three variables corresponding to the configuration in step 1.
+
+```
+MONGODB_SERVER = "mongodb+srv://[USERNAME]:[PASSWORD]@[DBCLUSTERNAME].mongodb.net/test?retryWrites=true&w=majority"
+MONGODB_DB = '[DBNAME]'
+MONGODB_COLLECTION = '[COLLECTIONNAME]'
+```
+
+Execute the crawling for the bookstore website:
+
+```
+cd ..
 scrapy crawl books
 ```
 
