@@ -45,7 +45,7 @@ Go into the source folder of scrapy/books project, make a new setting file from 
 
 ```
 cd books/books
-cp settings.py.sample settings.py.sample
+cp settings.py.sample settings.py
 ```
 
 Open the file `settings.py`, change the values of following three variables corresponding to the configuration in step 1.
@@ -65,7 +65,29 @@ scrapy crawl books
 
 ### 3. Launch web application
 
+Go into the source folder of `webapp`, make a new setting file from `settings.py.sample`:
+
 ```
-cd webapp
+cd ../webapp
+cp settings.py.sample settings.py
+```
+
+Open the file `settings.py`, change the values of following three variables corresponding to the configuration in step 1.
+
+```
+MONGODB_SERVER = "mongodb+srv://[USERNAME]:[PASSWORD]@[DBCLUSTERNAME].mongodb.net/test?retryWrites=true&w=majority"
+MONGODB_DB = '[DBNAME]'
+MONGODB_COLLECTION = '[COLLECTIONNAME]'
+```
+
+Launch the web application by:
+
+```
 python app.py
 ```
+
+Open a web-browswer and direct to the URL: **https://127.0.0.1:8888**. In the search box, type "boy" and submit.
+
+
+
+
